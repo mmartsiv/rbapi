@@ -1,0 +1,12 @@
+<%form_tag new_call_path, :method=>:get  do%>
+    <ul>
+      <li>
+        <%=select("call","controller",APP_CONFIG.keys,{:include_blank=>true}, :onchange=>"selectActions(#{APP_CONFIG.to_json},this,'call_action')")%>
+      </li>
+      <li>
+        <%=select("call","action",["Select action"])%>
+      </li>
+    </ul>
+<%=submit_tag("Select")%>
+<%end%>
+

@@ -1,0 +1,40 @@
+
+<%form_tag calls_path do%>
+    <table>
+      <thead>
+      <tr>
+        <td>Parameter</td>
+        <td>Value</td>
+        <td>Type</td>
+        <td>Required?</td>
+        <td>Comment</td>
+      </tr>
+      </thead>
+    <%@parameters.each do |key,parameter|%>
+        <tr>
+          <td>
+            <label><%=key%></label>
+          </td>
+          <td><%=text_field_tag key%></td>
+          <% if parameter.is_a?(Hash) && (parameter["required"]!="N")%>
+            <td><%= parameter["type"]%></td>
+            <td><%= parameter["required"]%></td>
+            <td><%= parameter["comment"]%></td>
+          <%elsif parameter["required"]=="N"%>
+            <td><%= parameter%></td>
+              <td colspan="3">N</td>
+          <%else%>
+            <td><%= parameter%></td>
+            <td colspan="3">Y</td>
+          <%end%>
+        </tr>
+    <%end%>
+    </table>
+    <%=hidden_field_tag "call_controller",@call_controller %>
+    <%=hidden_field_tag "call_action", @call_action %>
+    <%=submit_tag("Send")%>
+<%end%>
+
+<hr/>
+<h3>Results:</h3>
+<pre><%= @result %></pre>

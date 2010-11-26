@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RbApiClient</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults, "jquery" %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<%= yield %>
+<script type="text/javascript">
+    jQuery.noConflict();
+</script>
+</body>
+</html>

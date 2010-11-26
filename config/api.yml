@@ -1,0 +1,74 @@
+accounts:
+  exists:
+    method: GET
+    account_number: RBEmail
+  get:
+    method: GET
+    account_number: String
+  add:
+    method: POST
+    first_name: String
+    last_name: String
+    email: RBEmail
+    password: RBPassword
+    postal_code: RBPassword
+    agreed_to_tos: Boolean
+    agreed_to_ne_tos: Boolean
+    is_parent:
+      type: Boolean
+      required: N
+    owns_home: 
+      type: Boolean
+      required: N
+    gender:
+      type: RBGender
+      required: N
+    date_of_birth:
+      type: RBDate
+      required: N
+    partner_member_account_number:
+      type: String
+      required: N
+transactions:
+  allocate:
+    method: POST
+    account_number: String
+    units: Float
+    partner_member_account_number: String
+    partner_transaction_id:
+      type: String
+      required: N
+    date_time:
+      type: RBDateTime
+      required: N
+    environmental_impact:
+      type: RBKeyValue
+      required: N
+    internal_comment:
+      type: String
+      required: N
+    external_comment: String
+
+subscriptions:
+  add:
+    method: POST
+    member_account_number: String
+    partner_member_account_number: String
+    rb_member_pwd: String
+sessions:
+  create:
+    method: POST
+    landing_url: String
+    member_account_number: 
+      type: String
+      required: XOR
+      comment: A RecycleBank partner can create an authenticated session on behalf of a linked partner. If the member_account_number is passed in as a parameter, no other parameter besides landing_url will be accepted during the request.
+    email:
+      type: RBEmail
+      required: XOR
+      comment: A RecycleBank member’s account email. If provided, the partner must also provide the password parameter. No other parameters besides the email, password, and landing_url will be accepted during the request.
+    password:
+      type: String
+      required: XOR
+      comment: A RecycleBank member’s account password. If provided, the partner must also provide the email parameter. No other parameters besides email, password, and landing_url will be accepted during the request.
+
