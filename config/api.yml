@@ -52,7 +52,7 @@ transactions:
 subscriptions:
   add:
     method: POST
-    member_account_number: String
+    account_number: String
     partner_member_account_number: String
     rb_member_pwd: String
 sessions:
