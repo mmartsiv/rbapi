@@ -11007,3 +11007,1440 @@ Started POST "/calls" for 127.0.0.1 at Mon Nov 29 13:22:39 +0200 2010
 DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621514138_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
 Rendered calls/new.html.erb within layouts/application (4.1ms)
 Completed 200 OK in 159ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 29 15:25:34 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__621744578_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 29 16:18:09 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__621443428_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call%5Bcontroller%5D=transactions&call%5Baction%5D=allocate&commit=Select" for 127.0.0.1 at Mon Nov 29 16:18:46 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"allocate", "controller"=>"transactions"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621606718_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 16:19:26 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"", "external_comment"=>"", "method"=>"", "units"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621878028_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 266ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 16:26:18 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"11111", "external_comment"=>"", "method"=>"post", "units"=>"10000", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"1598338", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621424738_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 89ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 16:30:17 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"", "external_comment"=>"", "method"=>"", "units"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <controller>5000</controller>
+      <message>Invalid parameter</message>
+      <descriptions>
+        <description>partner_member_account_number</description>
+        <description>external_comment</description>
+        <description>units</description>
+        <description>account_number</description>
+      </descriptions>
+      <code>1004</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621684058_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 2665ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 16:30:24 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"", "external_comment"=>"", "method"=>"", "units"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <controller>5000</controller>
+      <message>Invalid parameter</message>
+      <descriptions>
+        <description>partner_member_account_number</description>
+        <description>external_comment</description>
+        <description>units</description>
+        <description>account_number</description>
+      </descriptions>
+      <code>1004</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621928418_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 174ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 29 16:30:59 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__621493248_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call%5Bcontroller%5D=accounts&call%5Baction%5D=add&commit=Select" for 127.0.0.1 at Mon Nov 29 16:31:06 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621747778_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call%5Bcontroller%5D=accounts&call%5Baction%5D=add&commit=Select" for 127.0.0.1 at Mon Nov 29 16:31:14 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621428538_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call%5Bcontroller%5D=accounts&call%5Baction%5D=add&commit=Select" for 127.0.0.1 at Mon Nov 29 16:31:15 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621671188_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 29 16:31:21 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__621913388_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call%5Bcontroller%5D=accounts&call%5Baction%5D=add&commit=Select" for 127.0.0.1 at Mon Nov 29 16:31:26 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621495988_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 16:34:28 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "is_parent"=>"", "commit"=>"Send", "call_action"=>"add", "partner_member_account_number"=>"12345", "method"=>"post", "postal_code"=>"11111", "agreed_to_ne_tos"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gender"=>"", "last_name"=>"last_test29", "owns_home"=>"", "date_of_birth"=>"", "password"=>"[FILTERED]", "agreed_to_tos"=>"1", "first_name"=>"first_test29", "email"=>"test29@ss.net"}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <controller>6000</controller>
+      <message>One or more invalid parameters were specified</message>
+      <descriptions>
+        <description>Active subscription exists</description>
+      </descriptions>
+      <code>3000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621761518_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 828ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call%5Bcontroller%5D=transactions&call%5Baction%5D=allocate&commit=Select" for 127.0.0.1 at Mon Nov 29 16:48:16 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"allocate", "controller"=>"transactions"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621443538_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 16:50:02 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"12345678", "external_comment"=>"External comment", "method"=>"post", "units"=>"1000", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"C4546652", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621698518_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 359ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 16:51:04 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"12345678", "external_comment"=>"External comment", "method"=>"post", "units"=>"1000", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"C4546652", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621962268_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (68.1ms)
+Completed 200 OK in 310ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 16:52:46 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"12345678", "external_comment"=>"External comment", "method"=>"post", "units"=>"1000", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"C4546652", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621556468_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 59219ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 16:53:53 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"12345678", "external_comment"=>"External comment", "method"=>"post", "units"=>"1000", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"C4546652", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621804558_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 6838ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 16:54:02 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"", "external_comment"=>"", "method"=>"", "units"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <controller>5000</controller>
+      <message>Invalid parameter</message>
+      <descriptions>
+        <description>partner_member_account_number</description>
+        <description>external_comment</description>
+        <description>units</description>
+        <description>account_number</description>
+      </descriptions>
+      <code>1004</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621465648_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 49ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 16:54:06 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"12345678", "external_comment"=>"External comment", "method"=>"post", "units"=>"1000", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"C4546652", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621719748_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 291678ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 16:59:16 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"12345678", "external_comment"=>"External comment", "method"=>"post", "units"=>"1000", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"C4546652", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621347928_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 13220ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 16:59:50 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"12345678", "external_comment"=>"External comment", "method"=>"post", "units"=>"1000", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"C4546652", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621614248_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 67435ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:01:20 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"12345678", "external_comment"=>"External comment", "method"=>"post", "units"=>"1000", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"C4546652", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+Completed   in 19137ms
+
+Curl::Err::GotNothingError (Server returned nothing (no headers, no data)):
+  lib/getdata.rb:48:in `http_post'
+  lib/getdata.rb:48:in `request'
+  app/controllers/calls_controller.rb:31:in `create'
+
+Rendered vendor/bundler_gems/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered vendor/bundler_gems/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (49.9ms)
+Rendered vendor/bundler_gems/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (54.4ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:02:39 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"12345678", "external_comment"=>"External comment", "method"=>"post", "units"=>"1000", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"C4546652", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <controller>5000</controller>
+      <message>One or more invalid parameters were specified</message>
+      <descriptions>
+        <description>12345678 is not subscribed to C4546652</description>
+      </descriptions>
+      <code>3000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621467228_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8370ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls" for 127.0.0.1 at Mon Nov 29 17:03:26 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__621703108_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call%5Bcontroller%5D=subscriptions&call%5Baction%5D=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:03:30 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"subscriptions"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621642508_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 60ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:03:57 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"subscriptions", "rb_member_pwd"=>"qwerty", "commit"=>"Send", "call_action"=>"add", "partner_member_account_number"=>"12345678", "method"=>"post", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"C4546652"}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <account_linked>1471508</account_linked>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621566568_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 325ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:04:05 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"12345678", "external_comment"=>"External comment", "method"=>"post", "units"=>"1000", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "account_number"=>"C4546652", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <recyclebank_transaction_id>272564</recyclebank_transaction_id>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621816848_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 11659ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls" for 127.0.0.1 at Mon Nov 29 17:16:10 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__621472258_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call%5Bcontroller%5D=accounts&call%5Baction%5D=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:16:15 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621729278_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call[controller]=accounts&call[action]=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:17:53 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621335268_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call[controller]=accounts&call[action]=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:20:19 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621585988_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call[controller]=accounts&call[action]=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:20:53 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621834398_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call[controller]=accounts&call[action]=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:21:12 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621480788_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call[controller]=accounts&call[action]=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:21:37 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621722548_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call[controller]=accounts&call[action]=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:21:54 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621354498_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call[controller]=accounts&call[action]=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:21:55 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621603508_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call[controller]=accounts&call[action]=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:22:00 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621856738_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call[controller]=accounts&call[action]=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:22:15 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621484888_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call[controller]=accounts&call[action]=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:22:56 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621738558_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call[controller]=accounts&call[action]=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:23:10 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621362698_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call[controller]=accounts&call[action]=add&commit=Select" for 127.0.0.1 at Mon Nov 29 17:23:28 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"add", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621615718_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 29 17:24:36 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__617945628_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 12ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 29 17:24:45 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__618144938_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call%5Bcontroller%5D=accounts&call%5Baction%5D=get&commit=Select" for 127.0.0.1 at Mon Nov 29 17:24:49 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"get", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__618658058_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:24:52 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__618162998_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 13372ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:25:13 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>"2"}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <account_number>2</account_number>
+  <first_name>Alexa</first_name>
+  <last_name>Bell</last_name>
+  <email>adupont@recyclebank.com</email>
+  <status>active</status>
+  <point_balance>3929.55</point_balance>
+  <gender>female</gender>
+  <date_of_birth>1978-02-24</date_of_birth>
+  <address>
+    <street1>111 Main Street</street1>
+    <street2></street2>
+    <street3></street3>
+    <city>Philadelphia</city>
+    <state_county>PA</state_county>
+    <postal_code>19118</postal_code>
+    <country>USA</country>
+  </address>
+  <start_date>2009-06-03 00:00:00 UTC</start_date>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__617925838_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 284ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls" for 127.0.0.1 at Mon Nov 29 17:35:49 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__618446088_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call%5Bcontroller%5D=transactions&call%5Baction%5D=allocate&commit=Select" for 127.0.0.1 at Mon Nov 29 17:35:54 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"allocate", "controller"=>"transactions"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__617903578_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 29 17:45:47 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__621218148_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 29 17:45:57 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__621368478_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call%5Bcontroller%5D=accounts&call%5Baction%5D=get&commit=Select" for 127.0.0.1 at Mon Nov 29 17:46:02 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"get", "controller"=>"accounts"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621611228_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:46:03 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621201858_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 88ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:46:22 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621442068_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 37ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:47:35 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621704798_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 93ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:48:00 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+Completed   in 2ms
+
+Curl::Err::ConnectionFailedError (Couldn't connect to server):
+  lib/getdata.rb:52:in `http_get'
+  lib/getdata.rb:52:in `request'
+  app/controllers/calls_controller.rb:31:in `create'
+
+Rendered vendor/bundler_gems/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered vendor/bundler_gems/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+Rendered vendor/bundler_gems/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:48:03 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621614628_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 501ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:48:22 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621095738_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 78ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:51:15 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621357378_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 38ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:51:35 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621609358_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 103ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:53:46 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621270968_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 91ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:54:28 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621525798_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 102ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:54:53 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621131228_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 33ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:54:54 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621382758_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 37ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:55:22 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621643348_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 206ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:55:25 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621262188_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 92ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:56:00 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621515438_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 178ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:56:01 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621145558_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 176ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 17:56:49 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>"sdgdgsdg"}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No matching RecycleBank account was found.</message>
+      <code>4001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621410198_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 101ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:02:16 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621690188_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 168ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:09:16 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621287188_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 174ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:11:18 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621546038_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 331754ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:19:03 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621168898_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 16290ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:19:55 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621427568_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 6710ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:21:17 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621682658_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 75585ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:23:05 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621291298_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 103ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:23:24 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621531138_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 41ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:23:25 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621167188_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 32ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:27:22 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621432028_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 107829ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:29:18 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"d", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>"dfgdfgd"}
+Completed   in 56923ms
+
+Curl::Err::GotNothingError (Server returned nothing (no headers, no data)):
+  lib/getdata.rb:52:in `http_get'
+  lib/getdata.rb:52:in `request'
+  app/controllers/calls_controller.rb:31:in `create'
+
+Rendered vendor/bundler_gems/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered vendor/bundler_gems/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (50.6ms)
+Rendered vendor/bundler_gems/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.1ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:33:05 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"d", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>"dfgdfgd"}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621245958_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 103ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:33:15 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621484498_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 43ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:33:19 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"sdf", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>"sdf"}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621726878_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 49ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:33:31 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621278718_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 105ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:34:21 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"vcxcvx", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>"xc"}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621537098_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 54ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:34:34 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"sdfsdfsf", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>"sdf"}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621219138_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 54ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:36:55 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621467638_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 21062ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:37:22 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"sdfsdfsdf", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>"sdfsdf"}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621722368_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 13684ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:38:47 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"sdfsdf", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621286758_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 88ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:38:56 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>"dsf"}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621528158_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 49ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:39:19 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621220238_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 43ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:40:38 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"dsf", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>"sdfsdf"}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>We&#8217;re sorry, an error has occurred. Technical support has been notified.</message>
+      <code>2000</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621474348_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 150ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:43:44 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621731568_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 115ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:43:45 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No controllers match this call.</message>
+      <code>1001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621283768_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 148ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Mon Nov 29 18:43:48 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"accounts", "commit"=>"Send", "call_action"=>"get", "method"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>"dfs"}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <message>No matching RecycleBank account was found.</message>
+      <code>4001</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621519158_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 125ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls" for 127.0.0.1 at Tue Nov 30 10:58:01 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__621229178_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Nov 30 15:33:32 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__621167018_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Nov 30 15:33:44 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__621387828_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call%5Bcontroller%5D=transactions&call%5Baction%5D=allocate&commit=Select" for 127.0.0.1 at Tue Nov 30 15:33:50 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"allocate", "controller"=>"transactions"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621639478_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Tue Nov 30 15:33:51 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"", "external_comment"=>"", "method"=>"", "units"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>"", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <descriptions>
+        <description>gpartner_secret_key</description>
+        <description>gpartner_id</description>
+      </descriptions>
+      <message>Unknown parameters</message>
+      <controller>5000</controller>
+      <code>1002</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621255378_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1401ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Nov 30 15:36:41 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__621712058_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls" for 127.0.0.1 at Tue Nov 30 15:37:02 +0200 2010
+  Processing by CallsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_index_html_erb___932383518__621872008_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/index.html.erb:1)
+Rendered calls/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calls/new?utf8=%E2%9C%93&call%5Bcontroller%5D=transactions&call%5Baction%5D=allocate&commit=Select" for 127.0.0.1 at Tue Nov 30 15:37:05 +0200 2010
+  Processing by CallsController#new as HTML
+  Parameters: {"commit"=>"Select", "utf8"=>"\342\234\223", "call"=>{"action"=>"allocate", "controller"=>"transactions"}}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__622107448_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calls" for 127.0.0.1 at Tue Nov 30 15:37:06 +0200 2010
+  Processing by CallsController#create as HTML
+  Parameters: {"call_controller"=>"transactions", "commit"=>"Send", "call_action"=>"allocate", "partner_transaction_id"=>"", "partner_member_account_number"=>"", "external_comment"=>"", "method"=>"", "units"=>"", "authenticity_token"=>"/Ga7zTQxZHcsCWnh6fjRssJnzduGJ2u0izXg9K190Ho=", "utf8"=>"\342\234\223", "gpartner_secret_key"=>"RB-1251951457r31E20E3B84B4F1C7E0", "gpartner_id"=>"2747", "account_number"=>"", "environmental_impact"=>"", "internal_comment"=>"", "date_time"=>""}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errors>
+    <error>
+      <descriptions>
+        <description>partner_member_account_number</description>
+        <description>external_comment</description>
+        <description>units</description>
+        <description>account_number</description>
+      </descriptions>
+      <message>Invalid parameter</message>
+      <controller>5000</controller>
+      <code>1004</code>
+    </error>
+  </errors>
+</response>
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_calls_new_html_erb___511314293__621720268_0 at /home/mmartsiv/Projects/Recyclebank/rbapi/app/views/calls/new.html.erb:2)
+Rendered calls/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 88ms (Views: 7.8ms | ActiveRecord: 0.0ms)

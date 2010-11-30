@@ -15,8 +15,10 @@ class GetData
   end
 
   def header
-    gpartner_id = '2747'
-    gpartner_secret_key = 'RB-1251951457r31E20E3B84B4F1C7E0'
+    gpartner_id = self.params[:gpartner_id].dup
+    gpartner_secret_key = self.params[:gpartner_secret_key].dup
+    self.params.delete('gpartner_id')
+    self.params.delete('gpartner_secret_key')
     parameters = {
        'first_name' => self.params[:first_name].nil? ? "" : self.params[:first_name],
        'last_name' => self.params[:last_name].nil? ? "" : self.params[:last_name],
@@ -35,11 +37,13 @@ class GetData
     if 'POST' == APP_CONFIG[self.controller][self.action]['method']
       "#{self.url}/#{self.controller}/#{self.action}"
     else
+      if !self.params['account_number'].blank?
       "#{self.url}/#{self.controller}/#{self.action}/#{self.params['account_number']}"
+      else
+       "#{self.url}/#{self.controller}/#{self.action}/#{self.params['email']}"
+      end
     end
   end
-  
-  
   
   def request
     curl = Curl::Easy.new get_url
