@@ -11,9 +11,11 @@ accounts:
     last_name: String
     email: RBEmail
     password: RBPassword
-    postal_code: RBPassword
+    postal_code: RBPostalCode
     agreed_to_tos: Boolean
-    agreed_to_ne_tos: Boolean
+    agreed_to_ne_tos:
+      type: Boolean
+      required: Y (if Nebraska)
     is_parent:
       type: Boolean
       required: N
@@ -54,7 +56,9 @@ subscriptions:
     method: POST
     account_number: String
     partner_member_account_number: String
-    rb_member_pwd: String
+    rb_member_pwd:
+      type: String
+      required: Y (for Integrated Earn Partners)
 sessions:
   create:
     method: POST
@@ -71,4 +75,3 @@ sessions:
       type: String
       required: XOR
       comment: A RecycleBank member’s account password. If provided, the partner must also provide the email parameter. No other parameters besides email, password, and landing_url will be accepted during the request.
-

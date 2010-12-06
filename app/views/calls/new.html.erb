@@ -1,4 +1,5 @@
-<hr/>
+<%= link_to ("Go to main page", "#{$url}")%>
+
 <%form_tag calls_path do%>
     <table>
       <thead>
@@ -12,6 +13,7 @@
         <td><%= text_field_tag(:gpartner_secret_key, "RB-1251951457r31E20E3B84B4F1C7E0") -%></td>
         <td>Y</td>
       </tr>
+
       <tr>
         <td>Parameter</td>
         <td>Value</td>
@@ -21,6 +23,7 @@
       </tr>
       </thead>
     <%@parameters.each do |key,parameter|%>
+      <%unless key == 'method'%>
         <tr>
           <td>
             <label><%=key%></label>
@@ -38,6 +41,7 @@
             <td colspan="3">Y</td>
           <%end%>
         </tr>
+       <%end%>
     <%end%>
     </table>
     <%=hidden_field_tag "call_controller",@call_controller %>

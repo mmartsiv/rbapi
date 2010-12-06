@@ -55,6 +55,5 @@ class GetData
     end
     curl.body_str
   end
-  
-  
+
 end

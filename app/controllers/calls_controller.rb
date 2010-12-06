@@ -8,10 +8,14 @@ class CallsController < ApplicationController
   end
 
   def new
-     @parameters=APP_CONFIG[params[:call][:controller]][params[:call][:action]]
-     @call_controller = params[:call][:controller]
-     @call_action = params[:call][:action]
-     render :text=>"Invalid data" if @parameters.nil?
+    if params[:call][:controller].blank?
+      render :text=>"<a href='#{$url}'>Please choose Controller</a>"
+    else
+      @parameters = APP_CONFIG[params[:call][:controller]][params[:call][:action]]
+      @call_controller = params[:call][:controller]
+      @call_action = params[:call][:action]
+      render :text=>"Invalid data" if @parameters.nil?
+    end
   end
 
   def create
