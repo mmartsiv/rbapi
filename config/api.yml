@@ -1,7 +1,7 @@
 accounts:
   exists:
     method: GET
-    account_number: RBEmail
+    email: RBEmail
   get:
     method: GET
     account_number: String
@@ -63,7 +63,7 @@ sessions:
   create:
     method: POST
     landing_url: String
-    member_account_number: 
+    account_number: 
       type: String
       required: XOR
       comment: A RecycleBank partner can create an authenticated session on behalf of a linked partner. If the member_account_number is passed in as a parameter, no other parameter besides landing_url will be accepted during the request.
