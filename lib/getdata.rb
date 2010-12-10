@@ -25,11 +25,14 @@ class GetData
        'account_number' => self.params[:account_number].nil? ? "" : self.params[:account_number],
        'email' => self.params[:email].nil? ? "" : self.params[:email]
      }
+     p parameters
     #sorted_params = parameters.sort
     sorted_params = parameters.sort_by {|key,value| key}
+    p sorted_params
     joined_params = sorted_params.flatten.join
     str_tohash = "#{joined_params}#{gpartner_secret_key}"
     signature = Digest::MD5.hexdigest("#{joined_params}#{gpartner_secret_key}")
+    p signature
     {"SIGNATURE" => signature, "GPARTNER_ID" => gpartner_id}
   end
   

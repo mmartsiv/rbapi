@@ -13,9 +13,6 @@ accounts:
     password: RBPassword
     postal_code: RBPostalCode
     agreed_to_tos: Boolean
-    agreed_to_ne_tos:
-      type: Boolean
-      required: Y (if Nebraska)
     is_parent:
       type: Boolean
       required: N
@@ -30,7 +27,7 @@ accounts:
       required: N
     partner_member_account_number:
       type: String
-      required: N
+      required: Y
 transactions:
   allocate:
     method: POST
@@ -54,11 +51,19 @@ transactions:
 subscriptions:
   add:
     method: POST
-    account_number: String
-    partner_member_account_number: String
+    account_number:
+      type: String
+      required: XOR
+      comment: for Integrated Earn Partners
+    email:
+      type: RBEmail
+      required: XOR
+      comment: for Integrated Earn Partners
     rb_member_pwd:
       type: String
-      required: Y (for Integrated Earn Partners)
+      required: Y
+      comment: for Integrated Earn Partners
+    partner_member_account_number: String
 sessions:
   create:
     method: POST
